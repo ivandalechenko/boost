@@ -45,23 +45,98 @@ time, mark, audio, video, button
     color: white
 
 .container
-    background-color: rgba(255, 255, 255, .1)
+    // background-color: rgba(255, 255, 255, .1)
     width: 1300px
     margin: 0 auto
 
-.banner
+.rock_your_app
     height: 100vh
     background-color: rgba(255, 255, 255, .1)
-    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner/background_gold.png), url(../img/banner/background_comix.png), #FFFFFF
-    // background-blend-mode: normal, multiply, normal, normal
-    // background-size: cover
-    // background-position: bottom
+
+header
+    .container
+        display: flex
+
+.logo
+    width: 25%
+.links
+    width: 50%
+    display: flex
+    column-gap: 60px
+    justify-content: center
+    padding-top: 30px
+    a
+
+        font-family: 'Bebas Neue'
+        font-style: normal
+        font-weight: 700
+        font-size: 28px
+        line-height: 28px
+        text-decoration: none
+        letter-spacing: 0.1em
+.soc_net
+    width: 25%
+    padding-top: 22px
 
 .logo_img_wrapper_img
     width: 0px
     height: 0px
+    z-index: 1
+    position: relative
     img
-        width: 400px
+        width: 350px
+        height: auto
 
 .logo_img
-    width: 171px
+    width: 0px
+    height: 0px
+    z-index: 2
+    position: relative
+    top: 12px
+    left: 45px
+    img
+        height: auto
+        width: 171px
+
+.cloud
+    position: relative
+    width: 0px
+    height: 0px
+    left: 270px
+    .text
+        position: absolute
+        top: 250px
+        left: 290px
+        transform: rotate(-10deg)
+        .h1_first_part, .h1_second_part
+            font-family: 'Permanent Marker'
+            font-style: normal
+            font-weight: 400
+            font-size: 38.196px
+            line-height: 56px
+            color: black
+            width: 300px
+            z-index: 4
+        .h1_first_part
+        .h1_second_part
+            position: relative
+            left: 95px
+            top: -15px
+        .h1_wrapper
+            position: relative
+            z-index: -1
+            top: -100px
+            left: 67px
+            transform: rotate(10deg)
+    .small_text
+        width: 411px
+        font-family: 'Bebas Neue'
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 25px
+        text-transform: uppercase
+        color: black
+        position: relative
+        top: -457px
+        left: 254px
