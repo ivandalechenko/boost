@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500&family=Rajdhani:wght@500;700&family=Yantramanav:wght@400;700&display=swap')
+@font-face
+    font-family: 'Permanent Marker'
+    src: url("fonts/Permanent Marker 400.ttf")
+    font-weight: 400
+@font-face
+    font-family: 'Bebas Neue'
+    src: url("fonts/Bebas Neue 400.ttf")
+    font-weight: 400
+@font-face
+    font-family: 'Bebas Neue'
+    src: url("fonts/Bebas Neue 700.ttf")
+    font-weight: 700
+@font-face
+    font-family: 'Marker Felt'
+    src: url("fonts/Marker Felt 400.ttf")
 
 body
     background-color: black
@@ -31,26 +45,23 @@ time, mark, audio, video, button
     color: white
 
 .container
-    width: 1110px
+    background-color: rgba(255, 255, 255, .1)
+    width: 1300px
     margin: 0 auto
-    @media (max-width: 1150px)
-        width: 920px
-    @media (max-width: 960px)
-        padding: 0px 15px
-        width: 100%
-.dnone
-    display: none
 
-// .banner
-//     height: 100vh
-//     width: 100%
+.banner
+    height: 100vh
+    background-color: rgba(255, 255, 255, .1)
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner/background_gold.png), url(../img/banner/background_comix.png), #FFFFFF
+    // background-blend-mode: normal, multiply, normal, normal
+    // background-size: cover
+    // background-position: bottom
 
-.we_provide
-    .we_provide_header_wrapper
-        animation: we_provide_header_wrapper 20s ease-out
-        stroke-dasharray: 20
-        stroke-dashoffset: 0
+.logo_img_wrapper_img
+    width: 0px
+    height: 0px
+    img
+        width: 400px
 
-        @keyframes we_provide_header_wrapper
-            100%
-                stroke-dashoffset: 100
+.logo_img
+    width: 171px
