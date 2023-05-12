@@ -48,6 +48,11 @@ time, mark, audio, video, button {
   vertical-align: baseline;
   box-sizing: border-box;
   color: white;
+  transition: 0.3s;
+}
+
+img, svg {
+  transition: 0.3s;
 }
 
 .container {
@@ -56,8 +61,8 @@ time, mark, audio, video, button {
 }
 
 .rock_your_app {
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.1);
+  height: 800px;
+  background-image: url(../img/rock_your_app/bg.png);
 }
 
 header .container {
@@ -107,24 +112,45 @@ header .container {
   height: 0px;
   z-index: 2;
   position: relative;
-  top: 12px;
-  left: 45px;
+  top: 25px;
+  left: 88px;
+  transform: rotate(5deg);
 }
 .logo_img img {
   height: auto;
   width: 171px;
 }
 
+.logo2_img {
+  width: 0px;
+  height: 0px;
+  z-index: 2;
+  position: relative;
+  top: 85px;
+  left: 120px;
+}
+
 .cloud {
   position: relative;
   width: 0px;
   height: 0px;
-  left: 270px;
+  left: 370px;
+  top: 150px;
+}
+.cloud .logo {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+.cloud .logo img {
+  width: 500px;
 }
 .cloud .text {
   position: absolute;
-  top: 250px;
-  left: 290px;
+  top: 98px;
+  left: 186px;
   transform: rotate(-10deg);
 }
 .cloud .text .h1_first_part, .cloud .text .h1_second_part {
@@ -159,6 +185,64 @@ header .container {
   text-transform: uppercase;
   color: black;
   position: relative;
-  top: -457px;
-  left: 254px;
+  top: -306px;
+  left: 156px;
+}
+
+.hand_with_phone {
+  position: absolute;
+  right: 0px;
+  top: -20px;
+}
+
+.we_provide {
+  display: flex;
+  justify-content: center;
+}
+.we_provide .header:hover .header_element_wrapper svg {
+  stroke-dasharray: 20;
+  animation: 1s linear 0s infinite alternate header_element_wrapper;
+}
+@keyframes header_element_wrapper {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+.we_provide .header {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+}
+.we_provide .header .header_element_wrapper {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  left: -55px;
+  z-index: 2;
+  top: -34px;
+}
+.we_provide .header .header_element_wrapper_fill {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  z-index: 1;
+  left: -48px;
+  top: -13px;
+}
+.we_provide .header .header_element_wrapper_decor {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  top: -50px;
+  left: -100px;
+  top: -78px;
+  left: -135px;
+  z-index: 0;
+}
+.we_provide .header p {
+  position: relative;
+  transform: rotate(-6deg);
+  z-index: 3;
 }
