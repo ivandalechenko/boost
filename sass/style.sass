@@ -140,7 +140,6 @@ header
             color: black
             width: 300px
             z-index: 4
-        .h1_first_part
         .h1_second_part
             position: relative
             left: 95px
@@ -172,6 +171,7 @@ header
 .we_provide
     display: flex
     justify-content: center
+    flex-wrap: wrap
     .header:hover
         .header_element_wrapper
             svg
@@ -211,7 +211,47 @@ header
             top: -78px
             left: -135px
             z-index: 0
+
+        .header_element_wrapper_decor_2
+            width: 0px
+            height: 0px
+            position: relative
+            top: -50px
+            left: -100px
+            top: -129px
+            left: 154px
+            z-index: 4
         p
             position: relative
             transform: rotate(-6deg)
             z-index: 3
+    .navigation_wrapper
+        width: 100%
+    .navigation
+        width: 1000px
+        margin: 0 auto
+        margin-top: 55px
+        display: flex
+        justify-content: space-around
+    .navigation_element
+        width: auto
+        font-family: 'Bebas Neue'
+        font-weight: 700
+        font-size: 45px
+        line-height: 100%
+        text-transform: uppercase
+        color: #FFFFFF
+        transform: rotate(-10deg)
+        span
+            display: block
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 37px
+            line-height: 100%
+            text-transform: uppercase
+            background: linear-gradient(271.98deg, #FF8200 -7.27%, #FFF02E 109.2%), #FFFFFF
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
