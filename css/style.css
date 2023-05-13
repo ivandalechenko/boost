@@ -689,7 +689,7 @@ header .container {
   left: 96px;
 }
 .sources_content .soc_media .text {
-  transform: rotate(-10deg);
+  transform: rotate(-7deg);
   top: 147px;
   left: 49px;
 }
@@ -714,10 +714,94 @@ header .container {
 .sources_content .mob_user .background_wrapper {
   left: 9px;
 }
+.sources_content .mob_user .lines {
+  top: 158px;
+  left: 95px;
+}
 .sources_content .mob_user .text {
   font-family: "Bebas Neue";
   font-weight: 700;
   font-size: 42px;
   line-height: 100%;
   text-transform: uppercase;
+  width: 200px;
+  transform: rotate(-7deg);
+  top: 46px;
+  left: 47px;
+}
+.sources_content .retargeting {
+  top: 455px;
+  left: 428px;
+}
+.sources_content .retargeting .background_wrapper {
+  left: 14px;
+  top: -5px;
+}
+.sources_content .retargeting .human {
+  left: -15px;
+  top: -1px;
+}
+.sources_content .retargeting .lines {
+  top: 140px;
+  left: 110px;
+}
+.sources_content .retargeting .text {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 100%;
+  text-transform: uppercase;
+  transform: rotate(-7deg);
+  width: 167px;
+  text-align: center;
+  top: 40px;
+  left: 60px;
+}
+.sources_content .dsp {
+  top: 273px;
+  left: 727px;
+}
+.sources_content .dsp .background_wrapper {
+  top: 16px;
+  left: -1px;
+}
+.sources_content .dsp .android {
+  left: 110px;
+  top: -40px;
+}
+.sources_content .dsp .point {
+  top: 290px;
+  left: 54px;
+}
+.sources_content .dsp .p18 {
+  top: 240px;
+  left: -12px;
+}
+.sources_content .dsp .left_corner {
+  left: -12px;
+  top: 2px;
+}
+.sources_content .dsp .right_corner {
+  top: 295px;
+  left: 222px;
+}
+.sources_content .dsp .lines {
+  top: 211px;
+  left: 101px;
+}
+.sources_content .dsp .text {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transform: rotate(-7deg);
+  top: 140px;
+  left: 87px;
+}
+.sources_content .button {
+  top: 720px;
+  left: 480px;
 }
