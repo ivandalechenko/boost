@@ -18,7 +18,7 @@
   src: url("fonts/Marker Felt 400.ttf");
 }
 body {
-  background-color: black;
+  background-color: gray;
   line-height: 1;
 }
 
@@ -882,6 +882,10 @@ header .container {
   top: 99px;
   left: -111px;
 }
+.vert_header .header .bomb {
+  top: -59px;
+  left: 149px;
+}
 
 .vert_content {
   display: flex;
@@ -891,7 +895,8 @@ header .container {
   overflow: hidden;
   height: 800px;
   position: relative;
-  top: -20px;
+  top: -40px;
+  padding-top: 20px;
 }
 .vert_content .text {
   left: 55px;
@@ -927,6 +932,10 @@ header .container {
 .vert_content .first .decor {
   top: 510px;
   left: 110px;
+}
+.vert_content .first .corner {
+  top: 600px;
+  left: -9px;
 }
 .vert_content .second {
   left: -250px;
@@ -972,4 +981,90 @@ header .container {
 }
 .vert_content .fourth .text {
   left: 85px;
+}
+.vert_content .fourth .corner {
+  left: 233px;
+  top: -13px;
+}
+
+.partners_header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 195px;
+}
+.partners_header .header .count {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 230px;
+  line-height: 100%;
+  transform: rotate(-6deg);
+  position: relative;
+  z-index: 1;
+  top: -4px;
+  left: -184px;
+}
+.partners_header .header .text {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  text-align: center;
+  transform: rotate(-6deg);
+  z-index: 4;
+  top: 160px;
+  left: -62px;
+}
+.partners_header .header .text_wrapper {
+  top: 131px;
+  left: -91px;
+  z-index: 3;
+}
+.partners_header .header .text_wrapper_background {
+  top: 137px;
+  left: -97px;
+  z-index: 2;
+}
+.partners_header .header .header_text_wrapper_decor {
+  z-index: 0;
+  top: 116px;
+  left: -201px;
+}
+.partners_header .header .bomb {
+  top: -161px;
+  left: 49px;
+  z-index: 3;
+}
+
+.partners_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  height: 800px;
+  position: relative;
+  top: 60px;
+}
+.partners_content .partner_row {
+  width: 100%;
+  height: 140px;
+}
+.partners_content .partner_row .partner_row_inner {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.partners_content .partner_row .partner_row_inner .partner_element {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+}
+.partners_content .partner_row .partner_row_inner .partner_element .partner_logo {
+  width: 0px;
 }
