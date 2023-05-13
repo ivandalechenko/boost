@@ -1,0 +1,991 @@
+
+.container
+    width: 1300px
+    margin: 0 auto
+
+.we_provide
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 200px
+    .header:hover
+        .header_element_wrapper
+            svg
+                stroke-dasharray: 20
+                animation: 1s linear 0s infinite alternate header_element_wrapper
+                @keyframes header_element_wrapper
+                    100%
+                        stroke-dashoffset: 40
+
+    .header
+        font-family: 'Bebas Neue'
+        font-style: normal
+        font-weight: 700
+        font-size: 45px
+        line-height: 100%
+        .header_element_wrapper
+            width: 0px
+            height: 0px
+            position: relative
+            left: -55px
+            z-index: 2
+            top: -34px
+
+        .header_element_wrapper_fill
+            width: 0px
+            height: 0px
+            position: relative
+            z-index: 1
+            left: -48px
+            top: -13px
+        .header_element_wrapper_decor
+            width: 0px
+            height: 0px
+            position: relative
+            top: -50px
+            left: -100px
+            top: -78px
+            left: -135px
+            z-index: 0
+
+        .header_element_wrapper_decor_2
+            width: 0px
+            height: 0px
+            position: relative
+            top: -50px
+            left: -100px
+            top: -129px
+            left: 154px
+            z-index: 4
+        p
+            position: relative
+            transform: rotate(-6deg)
+            z-index: 3
+    .navigation_wrapper
+        width: 100%
+    .navigation
+        width: 1000px
+        margin: 0 auto
+        margin-top: 75px
+        display: flex
+        justify-content: space-around
+    .navigation_element
+        width: auto
+        font-family: 'Bebas Neue'
+        font-weight: 700
+        font-size: 45px
+        line-height: 75%
+        text-transform: uppercase
+        color: #FFFFFF
+        transform: rotate(-10deg)
+        transition: 0.5s ease-in-out
+        span
+            display: block
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 37px
+            text-transform: uppercase
+            color: #FF8200
+            // animation: 5s linear 0s infinite alternate span_anim
+            // @keyframes span_anim
+            //     100%
+            //         color: #FFF02E
+            // background: linear-gradient(271.98deg, #FF8200 -7.27%, #FFF02E 109.2%), #FFFFFF
+            // -webkit-background-clip: text
+            // -webkit-text-fill-color: transparent
+            // background-clip: text
+            // text-fill-color: transparent
+        .navigation_element_decor
+            display: flex
+            transform: rotate(9deg)
+            padding-top: 20px
+            svg
+                margin: auto
+                .topline
+                    transition: 0.5s ease-out
+                .botline
+                    transition: 0.5s ease-out
+
+    .navigation_element:hover
+        transform: scale(1.1) rotate(0.3deg)
+        cursor: pointer
+        svg
+            margin: auto
+            .topline
+                transform: translate(-71px, 7px) rotate(-3.9deg)
+            .botline
+                transform: translate(61px,-1px) rotate(-1deg)
+
+    .gold
+        width: 0px
+        height: 0px
+        opacity: 0
+        position: absolute
+        top: -100px
+        left: 300px
+        overflow: hidden
+        img
+            position: absolute
+            left: -400px
+            top: -46px
+    .active
+        color: white
+        transform: scale(1.1) rotate(0.3deg)
+        animation: 0.5s ease-in-out we_porive_nav_active_text
+        animation-fill-mode: forwards
+        @keyframes we_porive_nav_active_text
+            100%
+                color: black
+        span
+            color: #FF8200
+            animation: 0.5s ease-in-out we_porive_nav_active_span
+            animation-fill-mode: forwards
+            @keyframes we_porive_nav_active_span
+                100%
+                    color: black
+        svg
+            opacity: 1
+            animation: 0.2s ease-in-out we_porive_nav_active_svg
+            animation-fill-mode: forwards
+            @keyframes we_porive_nav_active_svg
+                100%
+                    opacity: 0
+        .gold
+            height: 300px
+            width: 400px
+            opacity: 1
+            left: -100px
+            z-index: -1
+        img
+            left: 0px
+
+    .text
+        width: 100%
+        display: flex
+        justify-content: center
+        height: 600px
+        transition: 0.5s
+        .p
+            width: 540px
+            height: 0px
+            position: absolute
+            z-index: 2
+            margin-top: 127px
+            p
+                font-family: 'Bebas Neue'
+                font-style: normal
+                font-weight: 400
+                font-size: 24px
+                line-height: 34px
+                width: 576px
+        .text_wrapper
+            width: 0px
+            height: 0px
+            position: relative
+            left: -350px
+            top: 40px
+            z-index: 1
+            svg
+                .border
+                    animation: 1s ease-out text_wrapper_show_anim
+                    animation-fill-mode: forwards
+                    stroke-dasharray: 1920
+                    stroke-dashoffset: 1920
+                    @keyframes text_wrapper_show_anim
+                        100%
+                            stroke-dashoffset: 0
+        .text_wrapper_wrapper
+            width: 0px
+            height: 0px
+            position: relative
+            left: -30px
+            top: -301px
+            svg
+                .border
+                    animation: 1s ease-out 1s text_wrapper_show_anim
+                    animation-fill-mode: forwards
+                    stroke-dasharray: 1950
+                    stroke-dashoffset: 1950
+                    @keyframes text_wrapper_show_anim
+                        100%
+                            stroke-dashoffset: 0
+        .mouth
+            height: 0px
+            width: 0px
+            position: relative
+            top: -250px
+            left: 400px
+            z-index: -1
+            animation: 1s ease-out mouth_show_anim
+            animation-fill-mode: forwards
+            @keyframes mouth_show_anim
+                70%
+                    top: -50px
+                    left: 700px
+                    z-index: -1
+                100%
+                    top: -120px
+                    left: 605px
+                    z-index: 1
+        .exc_point
+            height: 0px
+            width: 0px
+            position: relative
+            top: -291px
+            left: 500px
+            z-index: -1
+            animation: 1s cubic-bezier(0, 0.72, 0.19, 0.96) 1s exc_point_show_anim
+            animation-fill-mode: forwards
+            @keyframes exc_point_show_anim
+                99%
+                    top: -291px
+                    left: 735px
+                    z-index: -1
+                100%
+                    top: -291px
+                    left: 735px
+                    z-index: 1
+        .star_right
+            height: 0px
+            width: 0px
+            position: relative
+            top: -125px
+            z-index: -1
+            left: 500px
+            animation: 1s cubic-bezier(0, 0.72, 0.19, 0.96) 1.5s star_right_show_anim
+            animation-fill-mode: forwards
+            @keyframes star_right_show_anim
+                99%
+                    top: -125px
+                    left: 796px
+                    z-index: -1
+                100%
+                    top: -125px
+                    left: 796px
+                    z-index: 1
+        .star_left
+            height: 0px
+            width: 0px
+            position: relative
+            top: -100px
+            z-index: -1
+            left: 200px
+            animation: 1s cubic-bezier(0, 0.72, 0.19, 0.96) 2s star_left_show_anim
+            animation-fill-mode: forwards
+            @keyframes star_left_show_anim
+                99%
+                    top: -24px
+                    left: -104px
+                    z-index: -1
+                100%
+                    top: -24px
+                    left: -104px
+                    z-index: 1
+        .lightning
+            height: 0px
+            width: 0px
+            position: relative
+            top: -207px
+            left: 200px
+            z-index: -1
+            animation: 1s cubic-bezier(0, 0.72, 0.19, 0.96) 2.5s lightning_show_anim
+            animation-fill-mode: forwards
+            @keyframes lightning_show_anim
+                99%
+                    top: -207px
+                    left: -181px
+                    z-index: -1
+                100%
+                    top: -207px
+                    left: -181px
+                    z-index: 1
+        .corner
+            height: 0px
+            width: 0px
+            position: relative
+            z-index: -1
+            top: -100px
+            left: 100px
+            animation: 1s cubic-bezier(0, 0.72, 0.19, 0.96) 3s corner_show_anim
+            animation-fill-mode: forwards
+            @keyframes corner_show_anim
+                99%
+                    top: -291px
+                    left: -48px
+                    z-index: -1
+                100%
+                    top: -291px
+                    left: -48px
+                    z-index: 1
+    .hide
+        opacity: 0
+
+.element
+    width: 0px
+    height: 0px
+    position: relative
+.sources_header
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    height: 195px
+    .header
+        .count
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 230px
+            line-height: 100%
+            transform: rotate(-6deg)
+            position: relative
+            z-index: 0
+            top: 0px
+            left: -268px
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 45px
+            line-height: 100%
+            text-align: center
+            transform: rotate(-6deg)
+            z-index: 3
+            top: 160px
+            left: -50px
+        .text_wrapper
+            width: 0px
+            height: 0px
+            position: relative
+            top: 131px
+            left: -91px
+            z-index: 2
+        .text_wrapper_background
+            width: 0px
+            height: 0px
+            position: relative
+            top: 134px
+            left: -97px
+            z-index: 1
+        .like
+            width: 0px
+            height: 0px
+            position: relative
+            top: -27px
+            left: -388px
+            z-index: 1
+
+.sources_content
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    overflow: hidden
+    height: 840px
+    position: relative
+    top: -170px
+
+    .content_background
+        width: 1140px
+        z-index: -6
+        top: 115px
+    .rocket
+        z-index: -1
+        left: 610px
+        top: 0px
+    .speaker
+        z-index: -1
+        left: 17px
+        top: 492px
+    .speaker_background
+        z-index: -2
+        left: 102px
+        top: 534px
+    .soc_media
+        z-index: -5
+        top: 262px
+        left: 140px
+        .soc_media_background_wrapper
+            top: 14px
+            left: -3px
+        .tt
+            top: 53px
+            left: -48px
+        .fb
+            top: -13px
+            left: 117px
+        .tw
+            top: 24px
+            left: 184px
+        .fc
+            left: -16px
+            top: 4px
+        .sc
+            top: 295px
+            left: 224px
+        .lines
+            top: 248px
+            left: 96px
+        .text
+            transform: rotate(-7deg)
+            top: 147px
+            left: 49px
+            .small
+                font-family: 'Bebas Neue'
+                font-weight: 700
+                font-size: 45px
+                text-transform: uppercase
+                line-height: 100%
+            .big
+                font-family: 'Bebas Neue'
+                font-weight: 700
+                font-size: 75px
+                line-height: 65%
+                text-transform: uppercase
+
+    .mob_user
+        top: 232px
+        left: 436px
+        .background_wrapper
+            left: 9px
+        .lines
+            top: 158px
+            left: 95px
+        .text
+            font-family: 'Bebas Neue'
+            font-weight: 700
+            font-size: 42px
+            line-height: 100%
+            text-transform: uppercase
+            width: 200px
+            transform: rotate(-7deg)
+            top: 46px
+            left: 47px
+
+    .retargeting
+        top: 455px
+        left: 428px
+        .background_wrapper
+            left: 14px
+            top: -5px
+        .human
+            left: -15px
+            top: -1px
+        .lines
+            top: 140px
+            left: 110px
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 42px
+            line-height: 100%
+            text-transform: uppercase
+            transform: rotate(-7deg)
+            width: 167px
+            text-align: center
+            top: 40px
+            left: 60px
+
+    .dsp
+        top: 273px
+        left: 727px
+        .background_wrapper
+            top: 16px
+            left: -1px
+        .android
+            left: 110px
+            top: -40px
+        .point
+            top: 290px
+            left: 54px
+        .p18
+            top: 240px
+            left: -12px
+        .left_corner
+            left: -12px
+            top: 2px
+        .right_corner
+            top: 295px
+            left: 222px
+        .lines
+            top: 211px
+            left: 101px
+        .text
+            font-family: 'Bebas Neue'
+            font-weight: 700
+            font-size: 75px
+            line-height: 100%
+            text-transform: uppercase
+            color: #FFFFFF
+            transform: rotate(-7deg)
+            top: 140px
+            left: 87px
+    .button
+        top: 720px
+        left: 480px
+        .wrapper_yellow
+            top: 5px
+            left: -14px
+        .text
+            font-family: 'Marker Felt'
+            font-style: normal
+            font-weight: 400
+            font-size: 27px
+            line-height: 29px
+            width: 120px
+            background: linear-gradient(180deg, #FF9323 0%, #FFF02E 100%), #FFFFFF
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+            transform: rotate(-6.44deg)
+            height: 26px
+            top: 34px
+            left: 40px
+
+.vert_header
+    position: relative
+    z-index: 2
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    height: 195px
+    margin-top: -78px
+    .header
+        .count
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 230px
+            line-height: 100%
+            transform: rotate(-6deg)
+            position: relative
+            z-index: 1
+            top: -35px
+            left: -65px
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 45px
+            line-height: 100%
+            text-align: center
+            transform: rotate(-6deg)
+            z-index: 4
+            top: 160px
+            left: -62px
+        .text_wrapper
+            top: 131px
+            left: -91px
+            z-index: 3
+        .text_wrapper_background
+            top: 137px
+            left: -97px
+            z-index: 2
+        .header_text_wrapper_decor
+            z-index: 0
+            top: 99px
+            left: -111px
+        .bomb
+            top: -59px
+            left: 149px
+
+.vert_content
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    overflow: hidden
+    height: 800px
+    position: relative
+    top: -40px
+    padding-top: 20px
+    .text
+        left: 55px
+        top: 288px
+        .wrap
+            width: 200px
+            font-family: 'Bebas Neue'
+            font-weight: 700
+            font-size: 53.6px
+            line-height: 100%
+            text-transform: uppercase
+            color: #FFFFFF
+            transform: rotate(-7deg)
+            text-shadow: 0px 0px 10px black
+    .lines
+        top: 362px
+        left: 95px
+    .bg
+        top: 43px
+        left: -734px
+    .first
+        left: -520px
+        z-index: 2
+        .wrap
+            top: 30px
+            left: -11px
+        .decor
+            top: 510px
+            left: 110px
+        .corner
+            top: 600px
+            left: -9px
+    .second
+        left: -250px
+        .wrap
+            top: 3px
+        .text
+            left: 70px
+    .third
+        left: 20px
+        .wrap
+            top: 10px
+        .text
+            left: 45px
+            .wrap
+                font-size: 45.6px
+    .fourth
+        left: 290px
+        .text
+            z-index: 2
+        .banner
+            z-index: 1
+        .wrap
+            left: 6px
+            z-index: 1
+        .lines
+            z-index: 1
+        .decor
+            top: 280px
+            left: 210px
+            z-index: 0
+        .text
+            left: 85px
+        .corner
+            left: 233px
+            top: -13px
+
+.partners_header
+    position: relative
+    z-index: 2
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    height: 195px
+    // margin-top: -78px
+    .header
+        .count
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 230px
+            line-height: 100%
+            transform: rotate(-6deg)
+            position: relative
+            z-index: 1
+            top: -4px
+            left: -217px
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 45px
+            line-height: 100%
+            text-align: center
+            transform: rotate(-6deg)
+            z-index: 4
+            top: 160px
+            left: -92px
+        .text_wrapper
+            top: 131px
+            left: -125px
+            z-index: 3
+        .text_wrapper_background
+            top: 137px
+            left: -131px
+            z-index: 2
+        .header_text_wrapper_decor
+            z-index: 0
+            top: 116px
+            left: -260px
+        .bomb
+            top: -169px
+            left: 4px
+            z-index: 3
+
+.partners_content
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    overflow: hidden
+    position: relative
+    top: 60px
+    .partner_row
+        width: 100%
+        height: 160px
+        .partner_row_inner
+            width: 1000px
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            .partner_element
+                width: 12%
+                display: flex
+                justify-content: center
+                .partner_logo
+                    left: -36px
+                    top: 11px
+                .text_wrapper
+                    width: 0px
+                    height: 0px
+                    left: -60px
+                    top: 112px
+                    .text
+                        font-family: 'Marker Felt'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 12.6px
+                        line-height: 14px
+                        text-align: center
+                        width: 120px
+                .wrapper_first_style_1
+                    left: -50px
+                    top: 6px
+                .wrapper_first_style_2
+                    left: -23px
+                    top: 1px
+
+                .wrapper_second_style_1
+                    left: -47px
+                    top: 0px
+                .wrapper_second_style_2
+                    left: -30px
+                    top: 18px
+
+.partners_button
+    width: 100%
+    display: flex
+    justify-content: center
+    .button
+        left: -110px
+        top: 80px
+        .text
+            width: 200px
+            top: 35px
+            font-family: 'Marker Felt'
+            font-weight: 400
+            font-size: 27px
+            line-height: 29px
+            text-align: center
+            height: 30px
+            background: linear-gradient(180deg, #FF9323 0%, #FFF02E 100%), #FFFFFF
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+            transform: rotate(-6.44deg)
+        .wrapper_yellow
+            left: -15px
+            top: 5px
+
+.latest_article_header
+    position: relative
+    z-index: 2
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    height: 195px
+    margin-top: 120px
+    .header
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 45px
+            line-height: 100%
+            text-align: center
+            transform: rotate(-6deg)
+            z-index: 4
+            top: 171px
+            left: -84px
+            .wrap
+                width: 230px
+        .text_wrapper
+            top: 131px
+            left: -125px
+            z-index: 3
+        .text_wrapper_background
+            top: 137px
+            left: -131px
+            z-index: 2
+
+.latest_article_content
+    margin-top: 85px
+    .latest_article_row
+        width: 100%
+        height: 160px
+        .latest_article_row_inner
+            width: 900px
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            .latest_article_element
+                width: 30%
+                display: flex
+                justify-content: center
+                .latest_article_wrapper_background
+                    widht: 0px
+                    height: 0px
+                    z-index: -1
+                .text
+                    width: 202px
+                    top: 35px
+                    left: 38px
+                    .date
+                        font-family: 'Helvetica'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 11.7px
+                        line-height: 13px
+                        color: #FFFBFB
+                        opacity: 0.4
+                        padding-top: 7px
+                    .article
+                        margin-top: 10px
+                        font-family: 'Helvetica'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 16px
+                        color: #FFFBFB
+                .read_more_background
+                    top: 179px
+                    left: 40px
+                .read_more_text
+                    top: 192px
+                    left: 70px
+                    .wrap
+                        width: 200px
+                        color: black
+                        font-family: 'Bebas Neue'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 18.6838px
+                        line-height: 19px
+                        color: #000000
+
+.latest_article_button
+    width: 100%
+    display: flex
+    justify-content: center
+    .button
+        left: -110px
+        top: 80px
+        .text
+            width: 200px
+            top: 35px
+            font-family: 'Marker Felt'
+            font-weight: 400
+            font-size: 27px
+            line-height: 29px
+            text-align: center
+            height: 30px
+            background: linear-gradient(180deg, #FF9323 0%, #FFF02E 100%), #FFFFFF
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+            transform: rotate(-6.44deg)
+        .wrapper_yellow
+            left: -15px
+            top: 5px
+
+.footer_and_form_header
+    position: relative
+    z-index: 2
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    height: 75px
+    margin-top: 150px
+    .header
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 45px
+            line-height: 100%
+            text-align: center
+            transform: rotate(-6deg)
+            z-index: 4
+            top: 167px
+            left: -129px
+            .wrap
+                width: 230px
+        .text_wrapper
+            top: 131px
+            left: -125px
+            z-index: 3
+        .text_wrapper_background
+            top: 137px
+            left: -131px
+            z-index: 2
+        .header_text_decor
+            top: 96px
+            left: -243px
+            z-index: 3
+.footer_and_form_content
+    width: 100%
+    display: flex
+    justify-content: center
+    background-image: url(../img/footer_and_form/background.png)
+    height: 700px
+    padding-top: 120px
+    background-position: bottom
+    background-size: cover
+
+    .background
+        left: -510px
+        top: -10px
+    .background_wrapper
+        left: -535px
+        top: -23px
+    .form
+        top: 60px
+        left: -448px
+        form
+            width: 580px
+            height: 20px
+            justify-content: space-between
+            display: flex
+            label
+                font-family: 'Helvetica'
+                font-style: normal
+                font-weight: 400
+                font-size: 12px
+                line-height: 14px
+            .left
+                width: 200px
+                input
+                    outline: none
+                    width: 100%
+                    background: none
+                    border: none
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+                    color: white
+                    margin-top: 6px
+                    margin-bottom: 12px
+
+            .right
+                width: 320px
+                textarea
+                    height: 148px
+                    width: 100%
+                    outline: none
+                    margin-top: 27px
+                    background: none
+                    border: 1px solid rgba(255, 255, 255, 0.4)
+                    color: white

@@ -1,0 +1,54 @@
+header
+    display: flex
+    @media(max-width: 1100px)
+        display: none
+    .logo
+        width: 25%
+        display: flex
+        justify-content: right
+        .wrap
+            z-index: 1
+            left: -360px
+        .img
+            z-index: 2
+            top: 25px
+            left: -232px
+            transform: rotate(5deg)
+            img
+                height: auto
+                width: 171px
+        .txt
+            z-index: 2
+            top: 85px
+            left: -210px
+    .links
+        width: 50%
+        display: flex
+        column-gap: 60px
+        justify-content: center
+        padding-top: 30px
+        z-index: 2
+        a
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 28px
+            line-height: 28px
+            text-decoration: none
+            letter-spacing: 0.1em
+    .nw
+        width: 25%
+        padding-top: 22px
+        .as
+            width: 170px
+        .wrap
+            top: -50px
+            left: -80px
+
+.mob_header
+    display: none
+    @media(max-width: 1100px)
+        display: block
+        position: absolute
+        top: 0px
+        right: 0px
