@@ -805,3 +805,7 @@ header .container {
   top: 720px;
   left: 480px;
 }
+
+.dnone {
+  display: none;
+}
