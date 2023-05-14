@@ -1,0 +1,142 @@
+.cloud {
+  left: 22%;
+  top: 150px;
+}
+@media (max-width: 1500px) {
+  .cloud {
+    left: 15%;
+  }
+}
+@media (max-width: 1300px) {
+  .cloud {
+    left: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .cloud {
+    left: 7%;
+  }
+}
+@media (max-width: 1000px) {
+  .cloud {
+    left: 0%;
+  }
+}
+@media (max-width: 900px) {
+  .cloud {
+    top: 100px;
+    left: -80px;
+  }
+}
+@media (max-width: 700px) {
+  .cloud {
+    top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .cloud {
+    left: -160px;
+  }
+}
+.cloud .logo {
+  top: -100px;
+  left: 100px;
+}
+@media (max-width: 700px) {
+  .cloud .logo {
+    top: -49px;
+    left: 88px;
+  }
+}
+@media (max-width: 500px) {
+  .cloud .logo {
+    left: 170px;
+  }
+}
+.cloud .logo img {
+  width: 500px;
+}
+@media (max-width: 700px) {
+  .cloud .logo img {
+    width: 200px;
+  }
+}
+.cloud .text {
+  position: absolute;
+  top: 98px;
+  left: 186px;
+  transform: rotate(-10deg);
+}
+@media (max-width: 700px) {
+  .cloud .text {
+    top: 37px;
+    left: 193px;
+  }
+}
+.cloud .text .h1_first_part, .cloud .text .h1_second_part {
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38.196px;
+  line-height: 56px;
+  color: black;
+  width: 300px;
+  z-index: 4;
+}
+@media (max-width: 700px) {
+  .cloud .text .h1_first_part, .cloud .text .h1_second_part {
+    font-size: 19px;
+  }
+}
+.cloud .text .h1_second_part {
+  position: relative;
+  left: 95px;
+  top: -15px;
+}
+@media (max-width: 700px) {
+  .cloud .text .h1_second_part {
+    left: 52px;
+    top: -38px;
+  }
+}
+.cloud .text .h1_wrapper {
+  position: relative;
+  z-index: -1;
+  top: -100px;
+  left: 67px;
+  transform: rotate(10deg);
+}
+@media (max-width: 700px) {
+  .cloud .text .h1_wrapper {
+    top: -96px;
+    left: 36px;
+    width: 180px;
+  }
+}
+.cloud .small_text {
+  width: 411px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: black;
+  position: relative;
+  top: -306px;
+  left: 156px;
+}
+@media (max-width: 700px) {
+  .cloud .small_text {
+    font-size: 12.5px;
+    line-height: 15px;
+    top: -243px;
+    left: 185px;
+    width: 210px;
+  }
+}
+@media (max-width: 700px) {
+  .cloud .cloud_img {
+    width: 500px;
+  }
+}

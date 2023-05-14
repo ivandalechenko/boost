@@ -1,4 +1,4 @@
-var elements = document.querySelectorAll("#we_provide_navigation > .navigation_element");
+var elements = document.querySelectorAll("#we_provide_navigation > .nav_element_wrap > .nav_element");
 for (var i = 0; i < elements.length; i++) {
     elements[i].onclick = function () {
 
@@ -12,7 +12,7 @@ for (var i = 0; i < elements.length; i++) {
 
 
 
-        var active_list = document.querySelectorAll("#we_provide_navigation > .active");
+        var active_list = document.querySelectorAll("#we_provide_navigation > .nav_element_wrap > .active");
         for (var j = 0; j < active_list.length; j++) {
             active_list[0].classList.remove("active")
         };

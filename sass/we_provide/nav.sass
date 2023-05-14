@@ -1,0 +1,100 @@
+.nav_wrap
+    width: 100%
+    .nav
+        width: 980px
+        margin: 0 auto
+        margin-top: 75px
+        display: flex
+        justify-content: space-around
+        @media (max-width: 1000px)
+            justify-content: space-around
+            width: 100%
+        .nav_element_wrap
+            @media (max-width: 1000px)
+                transform: scale(0.8)
+            @media (max-width: 750px)
+                transform: scale(0.7)
+
+        .nav_element
+            width: 100%
+            font-family: 'Bebas Neue'
+            font-weight: 700
+            font-size: 45px
+            line-height: 75%
+            text-transform: uppercase
+            color: #FFFFFF
+            transform: rotate(-10deg)
+            transition: 0.5s ease-in-out
+            @media (max-width: 700px)
+                width: 120%
+            span
+                display: block
+                font-family: 'Bebas Neue'
+                font-style: normal
+                font-weight: 700
+                font-size: 37px
+                text-transform: uppercase
+                color: #FF8200
+            .lines
+                display: flex
+                transform: rotate(9deg)
+                padding-top: 20px
+                svg
+                    margin: auto
+                    .topline
+                        transition: 0.5s ease-out
+                    .botline
+                        transition: 0.5s ease-out
+
+        .nav_element:hover
+            transform: scale(1.1) rotate(0.3deg)
+            cursor: pointer
+            svg
+                margin: auto
+                .topline
+                    transform: translate(-71px, 7px) rotate(-3.9deg)
+                .botline
+                    transform: translate(61px,-1px) rotate(-1deg)
+
+        .gold
+            width: 0px
+            height: 0px
+            opacity: 0
+            position: absolute
+            top: -100px
+            left: 300px
+            overflow: hidden
+            img
+                position: absolute
+                left: -400px
+                top: -46px
+        .active
+            color: white
+            transform: scale(1.1) rotate(0.3deg)
+            animation: 0.5s ease-in-out we_porive_nav_active_text
+            animation-fill-mode: forwards
+            @keyframes we_porive_nav_active_text
+                100%
+                    color: black
+            span
+                color: #FF8200
+                animation: 0.5s ease-in-out we_porive_nav_active_span
+                animation-fill-mode: forwards
+                @keyframes we_porive_nav_active_span
+                    100%
+                        color: black
+            svg
+                opacity: 1
+                animation: 0.2s ease-in-out we_porive_nav_active_svg
+                animation-fill-mode: forwards
+                @keyframes we_porive_nav_active_svg
+                    100%
+                        opacity: 0
+            .gold
+                height: 300px
+                width: 400px
+                opacity: 1
+                left: -100px
+                z-index: -1
+                img
+                    left: 0px

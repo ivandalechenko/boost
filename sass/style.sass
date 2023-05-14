@@ -1,6 +1,5 @@
 @import fonts
 @import base
-// @import rock/main
 
 @import tmp
 
@@ -24,107 +23,238 @@
         height: 500px
 
     @import rock/header
+    @import rock/cloud
+    @import rock/hand
 
-    .cloud
-        left: 22%
-        top: 150px
-        @media(max-width: 1500px)
-            left: 15%
-        @media(max-width: 1300px)
-            left: 10%
-        @media(max-width: 1200px)
-            left: 7%
-        @media(max-width: 1000px)
-            left: 0%
-        @media(max-width: 900px)
-            top: 100px
-            left: -80px
-        @media(max-width: 700px)
-            top: 60px
-        @media(max-width: 500px)
-            left: -160px
-        .logo
-            top: -100px
-            left: 100px
-            @media(max-width: 700px)
-                top: -49px
-                left: 88px
-            @media(max-width: 500px)
-                left: 170px
+.we_provide
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    overflow: hidden
+    padding-top: 120px
+    margin-top: -180px
+    @import we_provide/header
+    @import we_provide/nav
+    @import we_provide/content
+    .hide
+        opacity: 0
 
-            img
-                width: 500px
-                @media(max-width: 700px)
-                    width: 200px
-        .text
-            position: absolute
-            top: 98px
-            left: 186px
-            transform: rotate(-10deg)
-            @media(max-width: 700px)
-                top: 37px
-                left: 193px
-            .h1_first_part, .h1_second_part
-                font-family: 'Permanent Marker'
-                font-style: normal
-                font-weight: 400
-                font-size: 38.196px
-                line-height: 56px
-                color: black
-                width: 300px
-                z-index: 4
-                @media(max-width: 700px)
-                    font-size: 19px
-            .h1_second_part
-                position: relative
-                left: 95px
-                top: -15px
-                @media(max-width: 700px)
-                    left: 52px
-                    top: -38px
-            .h1_wrapper
-                position: relative
-                z-index: -1
-                top: -100px
-                left: 67px
-                transform: rotate(10deg)
-                @media(max-width: 700px)
-                    top: -96px
-                    left: 36px
-                    width: 180px
-        .small_text
-            width: 411px
+.sources_header
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    height: 195px
+    .header
+        .count
             font-family: 'Bebas Neue'
             font-style: normal
             font-weight: 700
-            font-size: 18px
-            line-height: 25px
-            text-transform: uppercase
-            color: black
+            font-size: 230px
+            line-height: 100%
+            transform: rotate(-6deg)
             position: relative
-            top: -306px
-            left: 156px
-            @media(max-width: 700px)
-                font-size: 12.5px
-                line-height: 15px
-                top: -243px
-                left: 185px
-                width: 210px
-        .cloud_img
-            @media(max-width: 700px)
-                width: 500px
+            z-index: 0
+            top: 0px
+            left: -268px
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 45px
+            line-height: 100%
+            text-align: center
+            transform: rotate(-6deg)
+            z-index: 3
+            top: 160px
+            left: -50px
+        .text_wrapper
+            width: 0px
+            height: 0px
+            position: relative
+            top: 131px
+            left: -91px
+            z-index: 2
+        .text_wrapper_background
+            width: 0px
+            height: 0px
+            position: relative
+            top: 134px
+            left: -97px
+            z-index: 1
+        .like
+            width: 0px
+            height: 0px
+            position: relative
+            top: -27px
+            left: -388px
+            z-index: 1
 
-    .hand
-        position: relative
-        left: 60%
-        top: -20px
-        @media(max-width: 1200px)
-            top: 50px
-            width: 500px
-        @media(max-width: 700px)
-            width: 400px
-            left: 60%
-        @media(max-width: 500px)
-            width: 260px
-            left: 60%
-            top: 80px
+.sources_content
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    overflow: hidden
+    height: 840px
+    position: relative
+    top: -170px
+
+    .content_background
+        width: 1140px
+        z-index: -6
+        top: 115px
+    .rocket
+        z-index: -1
+        left: 610px
+        top: 0px
+    .speaker
+        z-index: -1
+        left: 17px
+        top: 492px
+    .speaker_background
+        z-index: -2
+        left: 102px
+        top: 534px
+    .soc_media
+        z-index: -5
+        top: 262px
+        left: 140px
+        .soc_media_background_wrapper
+            top: 14px
+            left: -3px
+        .tt
+            top: 53px
+            left: -48px
+        .fb
+            top: -13px
+            left: 117px
+        .tw
+            top: 24px
+            left: 184px
+        .fc
+            left: -16px
+            top: 4px
+        .sc
+            top: 295px
+            left: 224px
+        .lines
+            top: 248px
+            left: 96px
+        .text
+            transform: rotate(-7deg)
+            top: 147px
+            left: 49px
+            .small
+                font-family: 'Bebas Neue'
+                font-weight: 700
+                font-size: 45px
+                text-transform: uppercase
+                line-height: 100%
+            .big
+                font-family: 'Bebas Neue'
+                font-weight: 700
+                font-size: 75px
+                line-height: 65%
+                text-transform: uppercase
+
+    .mob_user
+        top: 232px
+        left: 436px
+        .background_wrapper
+            left: 9px
+        .lines
+            top: 158px
+            left: 95px
+        .text
+            font-family: 'Bebas Neue'
+            font-weight: 700
+            font-size: 42px
+            line-height: 100%
+            text-transform: uppercase
+            width: 200px
+            transform: rotate(-7deg)
+            top: 46px
+            left: 47px
+
+    .retargeting
+        top: 455px
+        left: 428px
+        .background_wrapper
+            left: 14px
+            top: -5px
+        .human
+            left: -15px
+            top: -1px
+        .lines
+            top: 140px
+            left: 110px
+        .text
+            font-family: 'Bebas Neue'
+            font-style: normal
+            font-weight: 700
+            font-size: 42px
+            line-height: 100%
+            text-transform: uppercase
+            transform: rotate(-7deg)
+            width: 167px
+            text-align: center
+            top: 40px
+            left: 60px
+
+    .dsp
+        top: 273px
+        left: 727px
+        .background_wrapper
+            top: 16px
+            left: -1px
+        .android
+            left: 110px
+            top: -40px
+        .point
+            top: 290px
+            left: 54px
+        .p18
+            top: 240px
+            left: -12px
+        .left_corner
+            left: -12px
+            top: 2px
+        .right_corner
+            top: 295px
+            left: 222px
+        .lines
+            top: 211px
+            left: 101px
+        .text
+            font-family: 'Bebas Neue'
+            font-weight: 700
+            font-size: 75px
+            line-height: 100%
+            text-transform: uppercase
+            color: #FFFFFF
+            transform: rotate(-7deg)
+            top: 140px
+            left: 87px
+    .button
+        top: 720px
+        left: 480px
+        .wrapper_yellow
+            top: 5px
+            left: -14px
+        .text
+            font-family: 'Marker Felt'
+            font-style: normal
+            font-weight: 400
+            font-size: 27px
+            line-height: 29px
+            width: 120px
+            background: linear-gradient(180deg, #FF9323 0%, #FFF02E 100%), #FFFFFF
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+            transform: rotate(-6.44deg)
+            height: 26px
+            top: 34px
+            left: 40px

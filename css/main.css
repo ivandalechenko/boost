@@ -1,0 +1,263 @@
+.rock {
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../img/rock/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1500px) {
+  .rock {
+    background-image: url(../img/rock/bg1500.png);
+  }
+}
+@media (max-width: 800px) {
+  .rock {
+    background-image: url(../img/rock/bg800.png);
+    height: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .rock {
+    height: 500px;
+  }
+}
+.rock header {
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .rock header {
+    display: none;
+  }
+}
+.rock header .logo {
+  width: 25%;
+  display: flex;
+  justify-content: right;
+}
+.rock header .logo .wrap {
+  z-index: 1;
+  left: -360px;
+}
+.rock header .logo .img {
+  z-index: 2;
+  top: 25px;
+  left: -232px;
+  transform: rotate(5deg);
+}
+.rock header .logo .img img {
+  height: auto;
+  width: 171px;
+}
+.rock header .logo .txt {
+  z-index: 2;
+  top: 85px;
+  left: -210px;
+}
+.rock header .links {
+  width: 50%;
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  justify-content: center;
+  padding-top: 30px;
+  z-index: 2;
+}
+.rock header .links a {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+.rock header .nw {
+  width: 25%;
+  padding-top: 22px;
+}
+.rock header .nw .as {
+  width: 170px;
+}
+.rock header .nw .wrap {
+  top: -50px;
+  left: -80px;
+}
+.rock .mob_header {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .rock .mob_header {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+.rock .cloud {
+  left: 22%;
+  top: 150px;
+}
+@media (max-width: 1500px) {
+  .rock .cloud {
+    left: 15%;
+  }
+}
+@media (max-width: 1300px) {
+  .rock .cloud {
+    left: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .rock .cloud {
+    left: 7%;
+  }
+}
+@media (max-width: 1000px) {
+  .rock .cloud {
+    left: 0%;
+  }
+}
+@media (max-width: 900px) {
+  .rock .cloud {
+    top: 100px;
+    left: -80px;
+  }
+}
+@media (max-width: 700px) {
+  .rock .cloud {
+    top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .rock .cloud {
+    left: -160px;
+  }
+}
+.rock .cloud .logo {
+  top: -100px;
+  left: 100px;
+}
+@media (max-width: 700px) {
+  .rock .cloud .logo {
+    top: -49px;
+    left: 88px;
+  }
+}
+@media (max-width: 500px) {
+  .rock .cloud .logo {
+    left: 170px;
+  }
+}
+.rock .cloud .logo img {
+  width: 500px;
+}
+@media (max-width: 700px) {
+  .rock .cloud .logo img {
+    width: 200px;
+  }
+}
+.rock .cloud .text {
+  position: absolute;
+  top: 98px;
+  left: 186px;
+  transform: rotate(-10deg);
+}
+@media (max-width: 700px) {
+  .rock .cloud .text {
+    top: 37px;
+    left: 193px;
+  }
+}
+.rock .cloud .text .h1_first_part, .rock .cloud .text .h1_second_part {
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38.196px;
+  line-height: 56px;
+  color: black;
+  width: 300px;
+  z-index: 4;
+}
+@media (max-width: 700px) {
+  .rock .cloud .text .h1_first_part, .rock .cloud .text .h1_second_part {
+    font-size: 19px;
+  }
+}
+.rock .cloud .text .h1_second_part {
+  position: relative;
+  left: 95px;
+  top: -15px;
+}
+@media (max-width: 700px) {
+  .rock .cloud .text .h1_second_part {
+    left: 52px;
+    top: -38px;
+  }
+}
+.rock .cloud .text .h1_wrapper {
+  position: relative;
+  z-index: -1;
+  top: -100px;
+  left: 67px;
+  transform: rotate(10deg);
+}
+@media (max-width: 700px) {
+  .rock .cloud .text .h1_wrapper {
+    top: -96px;
+    left: 36px;
+    width: 180px;
+  }
+}
+.rock .cloud .small_text {
+  width: 411px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: black;
+  position: relative;
+  top: -306px;
+  left: 156px;
+}
+@media (max-width: 700px) {
+  .rock .cloud .small_text {
+    font-size: 12.5px;
+    line-height: 15px;
+    top: -243px;
+    left: 185px;
+    width: 210px;
+  }
+}
+@media (max-width: 700px) {
+  .rock .cloud .cloud_img {
+    width: 500px;
+  }
+}
+.rock .hand {
+  position: relative;
+  left: 60%;
+  top: -20px;
+}
+@media (max-width: 1200px) {
+  .rock .hand {
+    top: 50px;
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .rock .hand {
+    width: 400px;
+    left: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .rock .hand {
+    width: 260px;
+    left: 60%;
+    top: 80px;
+  }
+}
