@@ -1242,7 +1242,7 @@ body {
 }
 
 .rock {
-  height: 1000px;
+  height: 900px;
   width: 100%;
   overflow: hidden;
   background-image: url(../img/rock/bg.png);
@@ -1258,6 +1258,12 @@ body {
 @media (max-width: 800px) {
   .rock {
     background-image: url(../img/rock/bg800.png);
+    height: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .rock {
+    height: 500px;
   }
 }
 .rock header {
@@ -1356,18 +1362,56 @@ body {
     left: 0%;
   }
 }
+@media (max-width: 900px) {
+  .rock .cloud {
+    top: 100px;
+    left: -80px;
+  }
+}
+@media (max-width: 700px) {
+  .rock .cloud {
+    top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .rock .cloud {
+    left: -160px;
+  }
+}
 .rock .cloud .logo {
   top: -100px;
   left: 100px;
 }
+@media (max-width: 700px) {
+  .rock .cloud .logo {
+    top: -49px;
+    left: 88px;
+  }
+}
+@media (max-width: 500px) {
+  .rock .cloud .logo {
+    left: 170px;
+  }
+}
 .rock .cloud .logo img {
   width: 500px;
+}
+@media (max-width: 700px) {
+  .rock .cloud .logo img {
+    width: 200px;
+  }
 }
 .rock .cloud .text {
   position: absolute;
   top: 98px;
   left: 186px;
   transform: rotate(-10deg);
+}
+@media (max-width: 700px) {
+  .rock .cloud .text {
+    top: 37px;
+    left: 193px;
+  }
 }
 .rock .cloud .text .h1_first_part, .rock .cloud .text .h1_second_part {
   font-family: "Permanent Marker";
@@ -1379,10 +1423,21 @@ body {
   width: 300px;
   z-index: 4;
 }
+@media (max-width: 700px) {
+  .rock .cloud .text .h1_first_part, .rock .cloud .text .h1_second_part {
+    font-size: 19px;
+  }
+}
 .rock .cloud .text .h1_second_part {
   position: relative;
   left: 95px;
   top: -15px;
+}
+@media (max-width: 700px) {
+  .rock .cloud .text .h1_second_part {
+    left: 52px;
+    top: -38px;
+  }
 }
 .rock .cloud .text .h1_wrapper {
   position: relative;
@@ -1390,6 +1445,13 @@ body {
   top: -100px;
   left: 67px;
   transform: rotate(10deg);
+}
+@media (max-width: 700px) {
+  .rock .cloud .text .h1_wrapper {
+    top: -96px;
+    left: 36px;
+    width: 180px;
+  }
 }
 .rock .cloud .small_text {
   width: 411px;
@@ -1404,8 +1466,41 @@ body {
   top: -306px;
   left: 156px;
 }
+@media (max-width: 700px) {
+  .rock .cloud .small_text {
+    font-size: 12.5px;
+    line-height: 15px;
+    top: -243px;
+    left: 185px;
+    width: 210px;
+  }
+}
+@media (max-width: 700px) {
+  .rock .cloud .cloud_img {
+    width: 500px;
+  }
+}
 .rock .hand {
-  position: absolute;
-  right: 0px;
+  position: relative;
+  left: 60%;
   top: -20px;
+}
+@media (max-width: 1200px) {
+  .rock .hand {
+    top: 50px;
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .rock .hand {
+    width: 400px;
+    left: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .rock .hand {
+    width: 260px;
+    left: 60%;
+    top: 80px;
+  }
 }
